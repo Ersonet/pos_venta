@@ -23,11 +23,11 @@
                                     <div class="card-body">
                                         <form id="frmLogin">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="usuario" name="usuario" type="text" placeholder="Ingrese usuario"/>
+                                                <input class="form-control" id="usuario" name="usuario" type="text" placeholder="Ingrese usuario">
                                                 <label for="usuario"><i class="fas fa-user"></i> Usuario</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="clave" name="clave" type="password" placeholder="Ingrese contraseña"/>
+                                                <input class="form-control" id="clave" name="clave" type="password" placeholder="Ingrese contraseña">
                                                 <label for="clave"><i class="fas fa-key"></i> Contraseña</label>
                                             </div>
                                             <div class="alert alert-danger text-center d-none" id="alerta" role="alert">

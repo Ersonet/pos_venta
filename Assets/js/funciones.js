@@ -58,3 +58,6 @@ function frmLogin(e) {
     };
   }
 }
+function frmUsuario() {
+  $("#nuevo_usuario").modal("show");
+}

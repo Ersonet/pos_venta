@@ -1,5 +1,4 @@
 <?php
-
 	class UsuariosModel extends Query{
 		public function __construct()
 		{
@@ -10,6 +9,12 @@
 			$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND clave = '$clave'";
 			$data = $this->select($sql);
 			return $data;
-		}
+    }
+    public function getUsuarios()
+		{
+			$sql = "SELECT u.*, c.id, c.caja FROM usuarios u INNER JOIN  caja c WHERE u.id_caja = c.id";
+			$data = $this->selectAll($sql);
+			return $data;
+    }
 	}
 ?>
